@@ -1,6 +1,6 @@
 # GIT WORKFLOW
 
-**Hut6** workflow for releasing and merge branches into master.
+**Hut6** workflow for releasing and merging branches into master.
 
 ---
 
@@ -12,21 +12,32 @@ Create new branch for your changes.
     
 # Step 2
 
-You now have a branch and can modity and test changes without effecting other developers or the **master** branch.
+You now have a new branch and can modity and test changes without it effecting other developers or the **master** branch.
 
 **Commit** your changes and remember to **push** them to your new branch.
 
 # Step 3
 
-Send a **"New pull request"** found under **Pull Requests** link on the left hand side menu on a Github project and have another developer review your changes.
+We need to make sure your changes are working on the latest the latest version of the **master** branch. This is checked by updating the **master** branch and merging it into the **new branch**.
 
-# Step 4
+### *Updating master*
 
-If the developer comments on any issues, return to **Step 2.** and fix an found issues.
+Before **Merging** or creating a **Pull Request** for your changes, make sure to update your **master** branch like so.
 
-If everything passed we now need to merge the new branch into the **master** branch as followed.
+	git checkout master
+	
+Now pull the latest changes from master
 
-Check that your current working branch is your new branch using the folling command.
+	git pull origin master
+
+
+### *Merging in master*
+
+Now change back to your **new branch**
+
+	git checkout <new_branch>
+
+Check that your current working branch is your **new branch** using the folling command.
 
 	git branch
 
@@ -34,9 +45,19 @@ Begin by merging **master** into your **new branch** using the following command
 
 	git merge master
 
+# Step 4
+
+Send a **"New pull request"** found under **Pull Requests** link on the left hand side menu on a Github project and have another developer review your changes.
+
 # Step 5
 
-Now that the **master** branch has been merged into your **new branch** and all conflicts dealt with. We need to merge the  **new branch** into the Master branch.
+If the developer comments on any issues, return to **Step 2.** and fix any found issues.
+
+If everything passed we now need to merge the new branch into the **master**.
+
+### *Merging your new branch with master*
+
+Now that the **master** branch has been merged into your **new branch**. We need to merge the combined **new branch**, which is now ready for release, into the **Master** branch.
 
 First we want to change our branch to **master** using the following command.
 

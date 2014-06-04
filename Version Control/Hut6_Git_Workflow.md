@@ -4,90 +4,97 @@
 
 ---
 
-# Step 1.
+# Step 1
 
-Create new branch for your changes.
+Create new branch for your changes. Give it a descriptive label so it makes sense to other developers that might work on the project. 
 
 	git checkout -b <new_branch>
     
 # Step 2
 
-You now have a new branch and can modity and test changes without it effecting other developers or the **master** branch.
+We now have a new branch where we can make changes and test them without affecting other developers or the **master** branch.
 
-**Commit** your changes and remember to **push** them to your new branch.
+When everything is done and working properly, commit the changes and push the new branch:
 
+	git add .
+	git commit -m "Some notes about the changes made"
 	git push -u origin <new_branch> 
 
 # Step 3
 
-We need to make sure your changes are working on the latest the latest version of the **master** branch. This is checked by updating the **master** branch and merging it into the **new branch**.
+Update the **master** branch and merge it into the **new branch** to make sure the changes on your new branch are working on the latest version of the **master** branch.
 
 ### *Updating master*
 
-Before **Merging** or creating a **Pull Request** for your changes, make sure to update your **master** branch like so.
+Change to the **master** branch:
 
 	git checkout master
 	
-Now pull the latest changes from master
+Pull the latest changes from master:
 
 	git pull origin master
 
 
 ### *Merging in master*
 
-Now change back to your **new branch**
+Change back to your **new branch**:
 
 	git checkout <new_branch>
 
-Check that your current working branch is your **new branch** using the folling command.
+Double check that the working branch is your **new branch**:
 
 	git branch
 
-Begin by merging **master** into your **new branch** using the following command
+Merge **master** into your **new branch**:
 
 	git merge master
 	
-### *Push the merge*
+# Step 4 
 
-Now that master has been merged into your **new branch**, remember to push your to the remote repo.
+Now that master has been merged into your **new branch**, make sure everything is still working and push your to the remote repo:
 
 	git push 
 
-# Step 4
-
-Send a **"New pull request"** found under **Pull Requests** link on the left hand side menu on a Github project and have another developer review your changes.
-
 # Step 5
 
-If the developer comments on any issues, return to **Step 2.** and fix any found issues.
+Check the results from Circle CI and Scrutinizer CI. Fix any outstanding issues and repeat steps above.
 
-If everything passed we now need to merge the new branch into the **master**.
+# Step 6
+
+Send a **"New pull request"** under **Pull Requests** link on the left hand side menu on a Github project and wait for another developer to review your changes. 
+
+# Step 7
+
+If a developer comments on any issues, return to **Step 2** and fix the outstanding issues.
+
+# Step 8
 
 ### *Merging your new branch with master*
 
-Now that the **master** branch has been merged into your **new branch**. We need to merge the combined **new branch**, which is now ready for release, into the **Master** branch.
+We now need to merge the **new branch** into the **master** branch.
 
-First we want to change our branch to **master** using the following command.
+Change the branch to **master**:
 
 	git checkout master
 	
-We now want to merge our **new branch** into our **master** branch using the following command.
+Merge the **new branch** into the **master** branch:
 
 	git merge --no-ff <new_branch>
 	
 * *The **--no-ff** flag prevents `git merge` from executing a "fast-forward".*
 
-# Step 6
+# Step 9
 
-The **master** branch on your local repo will now contain your changes and is ready to be pushed to the remote repo.
+The **master** branch on your local repository will now contain the changes from your branch.
 
-Use the release script located `app/tag-release` to tag your release and push your changes to the remote repo.	
+Use the release script to tag your release and push your changes to the remote repository.
 
     app/tag-release [fix|minor|major] [--force] [-push]
     
-* *The **--force** flag only applies to releases to non-master branches.*
+* *Use the **-push** flag to also push the changes to origin*
+* *It is not possible to tag a brach other than master by default. **--force** will allow you to tag branches other than master, but should not be used unless exceptional circumstances.*
 
-# Step 7
+# Step 10
 
 Now that the remote **master** branch is updated with your lastest changes, we can deploy to the server.
 
@@ -97,7 +104,7 @@ You can deploy by running the the following command on the server.
 
 ### *Post Release*
 
-Remember some changes will need database updates or migrations, APC user cache may need clearing or new assets dumped.
+Some changes will need database updates or migrations, vendors updates, caches clearing and new assets dumped.
 
 # Issues and Resolution 
 

@@ -61,13 +61,9 @@ Check the results from Circle CI and Scrutinizer CI. Fix any outstanding issues 
 
 # Step 6
 
-Send a **"New pull request"** under **Pull Requests** link on the left hand side menu on a Github project and wait for another developer to review your changes. 
+Send a **"New pull request"** under **Pull Requests** link on the left hand side menu on a Github project and wait for another developer to review your changes. When a developer points out any issues, return to **Step 2** and fix anything outstanding.
 
 # Step 7
-
-If a developer comments on any issues, return to **Step 2** and fix the outstanding issues.
-
-# Step 8
 
 ### *Merging your new branch with master*
 
@@ -83,7 +79,7 @@ Merge the **new branch** into the **master** branch:
 	
 * *The **--no-ff** flag prevents `git merge` from executing a "fast-forward".*
 
-# Step 9
+# Step 8
 
 The **master** branch on your local repository will now contain the changes from your branch.
 
@@ -94,7 +90,7 @@ Use the release script to tag your release and push your changes to the remote r
 * *Use the **-push** flag to also push the changes to origin*
 * *It is not possible to tag a brach other than master by default. **--force** will allow you to tag branches other than master, but should not be used unless exceptional circumstances.*
 
-# Step 10
+# Step 9
 
 Now that the remote **master** branch is updated with your lastest changes, we can deploy to the server.
 

@@ -16,6 +16,8 @@ You now have a new branch and can modity and test changes without it effecting o
 
 **Commit** your changes and remember to **push** them to your new branch.
 
+	git push 
+
 # Step 3
 
 We need to make sure your changes are working on the latest the latest version of the **master** branch. This is checked by updating the **master** branch and merging it into the **new branch**.
@@ -44,6 +46,12 @@ Check that your current working branch is your **new branch** using the folling 
 Begin by merging **master** into your **new branch** using the following command
 
 	git merge master
+	
+### *Push the merge*
+
+Now that master has been merged into your **new branch**, remember to push your to the remote repo.
+
+	git push 
 
 # Step 4
 
@@ -71,7 +79,7 @@ We now want to merge our **new branch** into our **master** branch using the fol
 
 # Step 6
 
-The **master** branch on your local repo will now contain your changes and is ready to be release to the remote repo.
+The **master** branch on your local repo will now contain your changes and is ready to be pushed to the remote repo.
 
 Use the release script located `app/tag-release` to tag your release and push your changes to the remote repo.	
 
@@ -81,12 +89,16 @@ Use the release script located `app/tag-release` to tag your release and push yo
 
 # Step 7
 
-Now that the remote **master** branch is update with your lastest changes, we can your the server deploy.
+Now that the remote **master** branch is updated with your lastest changes, we can deploy to the server.
 
-You can deploy using the following command.
+You can deploy by running the the following command on the server.
 
 	app/deploy [prod|stage] <version_number>
-	
+
+### *Post Release*
+
+Remember some changes will need database updates or migrations, APC user cache may need clearing or new assets dumped.
+
 # Issues and Resolution 
 
 ### *Releasing a broken build*

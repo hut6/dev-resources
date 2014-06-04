@@ -16,7 +16,7 @@ You now have a new branch and can modity and test changes without it effecting o
 
 **Commit** your changes and remember to **push** them to your new branch.
 
-	git push 
+	git push -u origin <new_branch> 
 
 # Step 3
 

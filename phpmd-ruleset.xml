@@ -39,7 +39,7 @@
             * id - short identifier
             -->
             <property name="exceptions" value="id,em,e" />
-            <property name="minimum" value="2" />
+            <property name="minimum" value="3" />
         </properties>
     </rule>
 

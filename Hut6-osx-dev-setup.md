@@ -1,5 +1,4 @@
 # Default Setup for Developers
-======================
 
 ## Xcode
 

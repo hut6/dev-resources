@@ -56,7 +56,21 @@ $ brew install freetype jpeg libpng gd zlib
 $ brew tap homebrew/homebrew-php
 $ brew install php55-xdebug php55-intl php55-mcrypt php55-opcache phpunit
 ```
-
+**If when running a php application, it complains about the timezone:**
+Edit the /etc/php.ini file:
+```
+sudo vi /etc/php.ini
+```
+Or if the file doesn't exist yet, copy the php.ini.default:
+```
+sudo cp /etc/php.ini.default /etc/php.ini
+```
+Then edit it so that the timezone parameter looks like follow:
+```
+; Defines the default timezone used by the date functions¬                                                               
+; http://php.net/date.timezone¬
+date.timezone = Australia/Darwin¬
+```
 
 ## Install MySQL
 

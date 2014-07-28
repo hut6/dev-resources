@@ -36,7 +36,7 @@ Check every is configured properly and fix issues if needed with ``$ brew doctor
 
 ##  Install additional formulae and commonly used packages 
 
-Install some common Homebrew packages such as **grep, wget, git, node**. This assumes that **Mathias’s dotfiles** above have been installed. 
+Install some common Homebrew packages such as **grep, wget, git, node, php**. This requires **Mathias’s dotfiles** to be installed. 
 
 See the full list of packages  at [github.com/mathiasbynens/dotfiles/blob/master/Brewfile](https://github.com/mathiasbynens/dotfiles/blob/master/Brewfile)
 

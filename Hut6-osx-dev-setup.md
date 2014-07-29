@@ -103,33 +103,12 @@ Java is required by some apps still; PHP Storm, the Adobe suite, etc... ``$ java
 
 PHP Storm can be downloaded from [jetbrains.com/phpstorm](http://www.jetbrains.com/phpstorm/). Remember to install the two Symfony addons and turn them on (this section about plugins to be extended).
 
+
 ## Vagrant 
 
-Vagrant can be downloaded from [vagrantup.com/downloads.html](https://www.vagrantup.com/downloads.html)
-
-The installer will automatically add ``vagrant`` to your system path so that it is available in terminals. If it is not found, please try logging out and logging back in to your system.
-
-### Virtual Box
-
-VirtualBox is a free, cross-platform consumer virtualisation product. It must be installed on its own from [virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads) prior to using Vagrant.
-
-VMware Fusion could be used as an alternative; better performance but more costly.
-
-
-### Ansible
-
-Ansible is an automation platform that makes applications and systems easier to deploy. 
-
-It is used to provision provision Vagrant boxes using ''playbooks'' for instance (yaml documents that comprise the set of steps to be actioned).
-
-Install it with ``$ brew install ansible``. 
-
-
-### Provisioning a box 
-
 See [github.com/hut6/vagrant-symfony](https://github.com/hut6/vagrant-symfony)
- for more information. Make sure Apache and MySQL are not running before starting or provisioning the vagrant environment. 
-
+ for more information. 
+ 
 
 ## Other apps to install
 

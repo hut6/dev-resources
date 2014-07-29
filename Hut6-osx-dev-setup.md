@@ -93,6 +93,12 @@ Optionally "secure" your MySQL installation, just a handy way to clean up defaul
 
 Then install **Sequel Pro** from [sequelpro.com/download](http://www.sequelpro.com/download), **Querious** from [araelium.com/querious](http://www.araelium.com/querious/) for the database GUI. For modeling tools, use **MySQL Workbench** from [dev.mysql.com/downloads/workbench](http://dev.mysql.com/downloads/workbench/).
 
+
+## PHP Storm
+
+PHP Storm can be downloaded from [jetbrains.com/phpstorm](http://www.jetbrains.com/phpstorm/). Remember to install the two Symfony addons and turn them on (this section about plugins to be extended).
+
+
 ## Virtual Box
 
 VirtualBox is a free, cross-platform consumer virtualisation product. It must be installed on its own from [virtualbox.org/wiki/Downloads](https://www.virtualbox.org/wiki/Downloads) prior to using Vagrant.
@@ -130,7 +136,6 @@ Java is required by some apps still; PHP Storm, the Adobe suite, etc... ``$ java
 ## Other apps to install
 
 - Google Chrome [google.com/chrome](http://www.google.com/chrome/)
-- PHP Storm [jetbrains.com/phpstorm](http://www.jetbrains.com/phpstorm/)
 - CodeKit [incident57.com/codekit](https://incident57.com/codekit/)
 - SublimeText [sublimetext.com](http://www.sublimetext.com/3)
 - Dropbox [dropbox.com/downloading](https://www.dropbox.com/downloading)

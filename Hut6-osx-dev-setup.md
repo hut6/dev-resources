@@ -31,7 +31,7 @@ The easiest way is to use the script below, it installs **Homebrew** to ``/usr/l
 $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 ```
 
-Check every is configured properly and fix issues if needed with ``$ brew doctor``.
+After the installation is finished, check every is configured properly and fix issues if needed with ``$ brew doctor``.
 
 
 ## Additional formulae and commonly used packages 

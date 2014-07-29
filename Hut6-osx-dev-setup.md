@@ -120,7 +120,7 @@ It is used to provision provision Vagrant boxes using ''playbooks'' for instance
 Install it with ``$ brew install ansible``. 
 
 
-### Setup a Vagrant box 
+### Provisioning a box 
 
 See [github.com/hut6/vagrant-symfony](https://github.com/hut6/vagrant-symfony)
  for more information. Make sure Apache and MySQL are not running before starting or provisioning the vagrant environment. 

@@ -93,6 +93,11 @@ Optionally "secure" your MySQL installation, just a handy way to clean up defaul
 
 Then install **Sequel Pro** from [sequelpro.com/download](http://www.sequelpro.com/download), **Querious** from [araelium.com/querious](http://www.araelium.com/querious/) for the database GUI. For modeling tools, use **MySQL Workbench** from [dev.mysql.com/downloads/workbench](http://dev.mysql.com/downloads/workbench/).
 
+ 
+## Java
+
+Java is required by some apps still; PHP Storm, the Adobe suite, etc... ``$ java -version`` will trigger a popup that will ask if you want to install Java.
+
 
 ## PHP Storm
 
@@ -124,11 +129,6 @@ Install it with ``$ brew install ansible``.
 
 See [github.com/hut6/vagrant-symfony](https://github.com/hut6/vagrant-symfony)
  for more information. Make sure Apache and MySQL are not running before starting or provisioning the vagrant environment. 
-
- 
-## Java
-
-Java is required by some apps still; PHP Storm, the Adobe suite, etc... ``$ java -version`` will trigger a popup that will ask if you want to install Java.
 
 
 ## Other apps to install

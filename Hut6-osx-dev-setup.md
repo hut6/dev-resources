@@ -56,19 +56,16 @@ $ brew install freetype jpeg libpng gd zlib
 $ brew tap homebrew/homebrew-php
 $ brew install php55-xdebug php55-intl php55-mcrypt php55-opcache phpunit
 ```
-**If when running a php application, it complains about the timezone:**
-Edit the /etc/php.ini file:
+
+** Change the PHP timezone setting**
+
 ```
-sudo vi /etc/php.ini
+$ sudo vi /etc/php.ini
 ```
-Or if the file doesn't exist yet, copy the php.ini.default:
+
+Then set the timezone to ``Australia/Darwin``. For the full list of timezones, have a look at [php.net/manual/en/timezones.php](http://php.net/manual/en/timezones.php)
+
 ```
-sudo cp /etc/php.ini.default /etc/php.ini
-```
-Then edit it so that the timezone parameter looks like follow:
-```
-; Defines the default timezone used by the date functions¬                                                               
-; http://php.net/date.timezone¬
 date.timezone = Australia/Darwin¬
 ```
 
@@ -78,10 +75,18 @@ date.timezone = Australia/Darwin¬
 $ brew install mysql
 ```
 
-To start MySQL (including auto start MySQL at login): 
+Setup MySQL as a service
 
 ```
-$ brew services start mysql
+$ mkdir -p ~/Library/LaunchAgents
+$ ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
+```
+
+To start or stop MySQL
+
+```
+$ launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
+$ launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 ```
 
 Optionally "secure" your MySQL installation, just a handy way to clean up defaults and set a root password with ``mysql_secure_installation``.

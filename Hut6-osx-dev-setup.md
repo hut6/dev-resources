@@ -23,7 +23,7 @@ $ ./.osx
 Hot corners will be turned on. If you don't like to use hot corners; settings can be found in the **Screen Saver** settings window. 
 
 
-## Install Homebrew
+## Homebrew
 
 The easiest way is to use the script below, it installs **Homebrew** to ``/usr/local`` so that you don’t need sudo when you brew install. See alternative installations methods at [github.com/Homebrew/homebrew/wiki/Installation](https://github.com/Homebrew/homebrew/wiki/Installation#alternative-installs)
 
@@ -34,7 +34,7 @@ $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 Check every is configured properly and fix issues if needed with ``$ brew doctor``.
 
 
-## Install additional formulae and commonly used packages 
+## Additional formulae and commonly used packages 
 
 Install some common Homebrew packages such as **grep, wget, git, node, php**. This requires **Mathias’s dotfiles** to be installed. 
 
@@ -50,7 +50,7 @@ $ brew install freetype jpeg libpng gd zlib
 ```
 
 
-## Install xdebug, phpunit, intl, opcache...
+## xdebug, phpunit, intl, opcache...
 
 ```
 $ brew tap homebrew/homebrew-php
@@ -69,7 +69,7 @@ Then set the timezone to ``Australia/Darwin``. For the full list of timezones, h
 date.timezone = Australia/Darwin¬
 ```
 
-## Install MySQL
+## MySQL
 
 ```
 $ brew install mysql
@@ -128,7 +128,7 @@ See [github.com/hut6/vagrant-symfony](https://github.com/hut6/vagrant-symfony)
  for more information. Make sure Apache and MySQL are not running before starting or provisioning the vagrant environment. 
 
  
-## Install Java
+## Java
 
 Java is required by some apps still; PHP Storm, the Adobe suite, etc... ``$ java -version`` will trigger a popup that will ask if you want to install Java.
 

@@ -34,7 +34,7 @@ $ ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 Check every is configured properly and fix issues if needed with ``$ brew doctor``.
 
 
-##  Install additional formulae and commonly used packages 
+## Install additional formulae and commonly used packages 
 
 Install some common Homebrew packages such as **grep, wget, git, node, php**. This requires **Mathias’s dotfiles** to be installed. 
 
@@ -57,7 +57,7 @@ $ brew tap homebrew/homebrew-php
 $ brew install php55-xdebug php55-intl php55-mcrypt php55-opcache phpunit
 ```
 
-** Change the PHP timezone setting**
+**Change the PHP timezone setting**
 
 ```
 $ sudo vi /etc/php.ini
@@ -75,14 +75,14 @@ date.timezone = Australia/Darwin¬
 $ brew install mysql
 ```
 
-Setup MySQL as a service
+**Setup MySQL as a service**
 
 ```
 $ mkdir -p ~/Library/LaunchAgents
 $ ln -sfv /usr/local/opt/mysql/*.plist ~/Library/LaunchAgents
 ```
 
-To start or stop MySQL
+**To start or stop MySQL**
 
 ```
 $ launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist

@@ -94,8 +94,9 @@ $ launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 Most of the apps you'll want can be install using Caskroom, if you like it that way:
 
 ```
-# brew install caskroom/cask/brew-cask
-# brew cask install phpstorm google-chrome firefox dropbox onepassword keka sequel-pro hipchat github codekit sublime-text 
+$ brew install caskroom/cask/brew-cask
+$ brew cask install phpstorm google-chrome dropbox onepassword sequel-pro # Minimal
+$ brew cask install firefox hipchat github codekit sublime-text keka  # Extras
 ```
 
 ## Database Tools

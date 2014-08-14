@@ -89,9 +89,18 @@ $ launchctl unload -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 $ launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 ```
 
-Optionally "secure" your MySQL installation, just a handy way to clean up defaults and set a root password with ``mysql_secure_installation``.
+## Applications
 
-Then install **Sequel Pro** from [sequelpro.com/download](http://www.sequelpro.com/download), **Querious** from [araelium.com/querious](http://www.araelium.com/querious/) for the database GUI. For modeling tools, use **MySQL Workbench** from [dev.mysql.com/downloads/workbench](http://dev.mysql.com/downloads/workbench/).
+Most of the apps you'll want can be install using Caskroom, if you like it that way:
+
+```
+# brew install caskroom/cask/brew-cask
+# brew cask install phpstorm google-chrome firefox dropbox onepassword keka sequel-pro hipchat github codekit sublime-text 
+```
+
+## Database Tools
+
+You might want **Sequel Pro** from [sequelpro.com/download](http://www.sequelpro.com/download), **Querious** from [araelium.com/querious](http://www.araelium.com/querious/) for the database GUI. For modeling tools, use **MySQL Workbench** from [dev.mysql.com/downloads/workbench](http://dev.mysql.com/downloads/workbench/).
 
  
 ## Java
@@ -101,7 +110,7 @@ Java is required by some apps still; PHP Storm, the Adobe suite, etc... ``$ java
 
 ## PHP Storm
 
-PHP Storm can be downloaded from [jetbrains.com/phpstorm](http://www.jetbrains.com/phpstorm/). Remember to install the two Symfony addons and turn them on (this section about plugins to be extended).
+PHP Storm can be downloaded from [jetbrains.com/phpstorm](http://www.jetbrains.com/phpstorm/). Remember to install the two Symfony addons and turn theme on (this section about plugins to be extended).
 
 
 ## Vagrant 
@@ -120,6 +129,5 @@ See [github.com/hut6/vagrant-symfony](https://github.com/hut6/vagrant-symfony)
 - Github for Mac [mac.github.com](https://mac.github.com/) or Git Tower [git-tower.com](http://www.git-tower.com/)
 - ImageOptim [imageoptim.com](https://imageoptim.com/)
 - ImageAlpha [pngmini.com](http://pngmini.com/)
-- The Unarchiver [wakaba.c3.cx/s/apps/unarchiver.html](http://wakaba.c3.cx/s/apps/unarchiver.html)
-- Growl [itunes.apple.com](https://itunes.apple.com/au/app/growl/id467939042)
+- Keka [www.kekaosx.com](http://www.kekaosx.com/en/)
 - Moom [manytricks.com/moom](http://manytricks.com/moom/)

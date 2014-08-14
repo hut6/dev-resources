@@ -96,6 +96,7 @@ Most of the apps you'll want can be install using Caskroom, if you like it that 
 ```
 $ brew install caskroom/cask/brew-cask
 $ brew cask install phpstorm google-chrome dropbox onepassword sequel-pro # Minimal
+$ brew cask install virtualbox vagrant # Vagrant
 $ brew cask install firefox hipchat github codekit sublime-text keka  # Extras
 ```
 

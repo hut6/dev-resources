@@ -91,7 +91,7 @@ $ launchctl load -w ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist
 
 ## Applications
 
-Most of the apps you'll want can be install using Caskroom, if you like it that way:
+Most of the apps you'll want can be installed using Caskroom, if you like it that way:
 
 ```sh
 brew install caskroom/cask/brew-cask

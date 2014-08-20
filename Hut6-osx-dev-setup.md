@@ -98,6 +98,13 @@ curl -sS https://getcomposer.org/installer | php
 mv composer.phar /usr/local/bin/composer
 ```
 
+## Show hidden files in the finder
+
+```
+defaults write com.apple.finder AppleShowAllFiles YES
+killall Finder
+```
+
 ## MySQL
 
 MySQL has already been installed by brew above. 

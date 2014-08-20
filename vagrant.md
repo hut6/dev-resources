@@ -2,7 +2,7 @@
 
 This document will help you setup a vagrant virtual machine, with nginx+PHP+MySQL+xdebug.
 
-### Install Brew
+## Install Brew
 
 Brew is a package manager for OSX.
 
@@ -11,7 +11,7 @@ xcode-select --install # Xcode command line tools
 ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)"
 ```
 
-### Install Caskroom
+## Install Caskroom
 
 Caskroom is a package for brew that lets you install GUI applications in OSX.
 
@@ -19,13 +19,13 @@ Caskroom is a package for brew that lets you install GUI applications in OSX.
 brew install caskroom/cask/brew-cask
 ```
 
-### Install Vagrant
+## Install Vagrant
 
 ```sh
 brew install ansible # ansible is used for vagrant provisioning
 brew cask install virtualbox vagrant # Virtualbox is used by vagrant
 ```
-### Clone Vagrant Configuration
+## Clone Vagrant Configuration
 
 ```sh
 mkdir -r ~/Projects/YourProject # This can be a clone of a project repository
@@ -44,7 +44,7 @@ It may take a while to download the box image the first time. But once the box i
 be all done. You may need to tweak your app to get it to under nginx if it's the first time running it on vagrant.
 By default, your app will be running at [192.168.33.10](http://192.168.33.10/).
 
-### Possible Problems
+#### Possible Problems
 
 1. NFS exports can cause issues when sharing folders from your local machine to the VM (you'll need the root pwd for this).
 2. If you're running Symfony, you may need to copy `/web/app_dev.php.dist` to `/web/app_dev.php`.

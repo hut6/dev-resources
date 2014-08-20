@@ -77,6 +77,8 @@ brew install caskroom/cask/brew-cask
 brew cask install phpstorm google-chrome dropbox onepassword sequel-pro firefox hipchat github codekit sublime-text keka harvest alfred imageoptim imagealpha the-unarchiver virtualbox vagrant filezilla teamviewer google-drive carbon-copy-cloner
 ```
 
+If you use Alfred, also run ``brew cask alfred link`` to add the Caskroom to Alfred's search paths otherwise your cask apps won't show up. If that doesn't work add ``/opt/homebrew-cask/Caskroom`` manually to the Search Scope. 
+
 ## PHP settings
 
 ```

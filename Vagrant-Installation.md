@@ -41,8 +41,10 @@ vagrant up --provision
 ```
 
 It may take a while to download the box image the first time. But once the box is downloaded and provisioned, you should
-be all done. [http://192.168.33.10/](http://192.168.33.10/).
+be all done. You may need to tweak your app to get it to under nginx if it's the first time running it on vagrant.
+By default, your app will be running at [192.168.33.10](http://192.168.33.10/).
 
 ### Possible Problems
 
 1. NFS exports can cause issues when sharing folders from your local machine to the VM (you'll need the root pwd for this).
+2. If you're running Symfony, you may need to copy `/web/app_dev.php.dist` to `/web/app_dev.php`.

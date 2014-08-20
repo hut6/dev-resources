@@ -41,7 +41,7 @@ vagrant up --provision
 ```
 
 It may take a while to download the box image the first time. But once the box is downloaded and provisioned, you should
-be all done.
+be all done. [http://192.168.33.10/](http://192.168.33.10/).
 
 ### Possible Problems
 

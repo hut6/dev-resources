@@ -21,13 +21,16 @@ Additional fields ?
 
 ## Tables already refactored to use this table:
 
+```
 orders
-	- shipping_address_id
-	- billing_address_id
-	- residential_address_id
+  shipping_address_id
+  billing_address_id
+  residential_address_id
+```
 
 ## Tables with full address fields matching the address table:
 
+```
 contact
 *appears to be postal
   `address1` varchar(255) DEFAULT NULL,
@@ -36,7 +39,9 @@ contact
   `state` varchar(24) DEFAULT NULL,
   `postcode` varchar(8) DEFAULT NULL,
   `country` varchar(255) DEFAULT NULL,
+```
 
+```
 contact_indiv_data
   `address1` varchar(255) DEFAULT NULL,
   `address2` varchar(255) DEFAULT NULL,
@@ -51,23 +56,26 @@ contact_indiv_data
   `residence_state` varchar(24) DEFAULT NULL,
   `residence_postcode` varchar(16) DEFAULT NULL,
   `residence_country` varchar(255) DEFAULT NULL,
+```
 
 note: contact_indiv_data is used with a type of ‘attendance’ to store AVETMISS RTO records through the event_attendance.rto_data field and with a type of ‘contact’ to extend the contact table. This dual purposing leads to different data between the two types of record (eg. postal is not used in the ‘contact’ type, as this info is in the main contact table)
 
 ## Tables with partial address fields not currently matching the address table:
 
+```
 abstract_submission_presenter
-	- address VARCHAR(128)
+  address VARCHAR(128)
 
 geo_location
-	- address VARCHAR(128)
-	- state VARCHAR(32)
+  address VARCHAR(128)
+  state VARCHAR(32)
 
 awards_aurora
-	- `address` varchar(127) NOT NULL
-	
+  `address` varchar(127) NOT NULL
+
 awards_crana
-	- `address` varchar(255) NOT NULL
+  `address` varchar(255) NOT NULL
+```
 
 ## Geolocation table
 
@@ -89,17 +97,21 @@ CREATE TABLE `geo_location` (
 ```
 ## Tables already refactored to use this table:
 
+```
 course_location
   `geoLocation_id` int(11) DEFAULT NULL,
 
 course_waitinglist
   `geoLocation_id` int(11) DEFAULT NULL,
+```
 
 ## Tables with full geo location fields matching the geo_location table:
 
+```
 contact
   `geolocation_latitude` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `geolocation_longitude` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `geolocation_address` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `geolocation_address_override` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
   `state`
+```

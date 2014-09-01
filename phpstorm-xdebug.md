@@ -52,14 +52,10 @@ xdebug.remote_host=127.0.0.1
 max_nesting_level defaults to 100 which can lead to stack overflows in Symfony
 
 ### Check PHPStorm settings
-Under Preferences -> Project Settings -> PHP -> Debug
+under Preferences -> Project Settings -> PHP -> Debug
 - in the xdebug section, port is set to 9000 and all checkboxes are ticked
 
-## VAGRANT/REMOTE DEBUGGING
-
-... to be continued
-
-### troubleshoot
+## TROUBLESHOOT
 if xdebug is still not working, then try the following:
 - copy web/ini.php.dist to web/ini.php
 - the web folder is the public web root of a Symfony project
@@ -72,4 +68,8 @@ ini.php.dist:
 ?>
 ```
 if xdebug does not appear in the list of modules, go to http://xdebug.org/wizard.php
-and paste in the HTML of the entire page. this page wil give advice on the configuration changes.
+and paste in the HTML of the entire page. This page wil give advice on the configuration changes.
+
+## VAGRANT/REMOTE DEBUGGING
+
+... to be continued

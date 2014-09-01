@@ -3,22 +3,19 @@
 Currently chronicles Ben Mc's adventures with xdebug on localhost and vagrant.
 
 ## Install xdebug
-
 ```sh
 brew install xdebug
 ```
-
 ## configure php.ini
-
 find the xdebug.so file
-
 ```sh
 Studio-PM-iMac:~ ben$ find / -name xdebug.so 2> /dev/null
 /usr/lib/php/extensions/no-debug-non-zts-20100525/xdebug.so
 /usr/local/Cellar/php54-xdebug/2.2.5/xdebug.so
 ```
-the dev/null pipe of the error output at the end prevents 'permission denied' errors displaying
+(the dev/null pipe of the error output at the end prevents 'permission denied' errors displaying)
 
+#### note:
 using locate is much faster but depends on the locate database being current
 ```sh
 Studio-PM-iMac:~ ben$ locate xdebug.so
@@ -28,9 +25,7 @@ use the following to update the locate database (may take 5+ mins)
 sudo /usr/libexec/locate.updatedb
 ```
 
-
 find your php.ini and edit it
-
 ```sh
 Studio-PM-iMac:~ find / -name php.ini 2> /dev/null
 /private/etc/php.ini

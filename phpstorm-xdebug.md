@@ -1,13 +1,14 @@
 # PHPStorm xdebug configuration on Mac OSX
 
-Currently chronicles Ben Mc's adventures with xdebug on localhost and vagrant.
+Chronicles Ben Mc's adventures with xdebug on localhost and vagrant.
 
-## Install xdebug
+## LOCALHOST DEBUGGING
+
+### Install xdebug
 ```sh
 brew install xdebug
 ```
-## configure php.ini
-find the xdebug.so file
+### find the xdebug.so file
 ```sh
 Studio-PM-iMac:~ ben$ find / -name xdebug.so 2> /dev/null
 /usr/lib/php/extensions/no-debug-non-zts-20100525/xdebug.so
@@ -15,7 +16,7 @@ Studio-PM-iMac:~ ben$ find / -name xdebug.so 2> /dev/null
 ```
 (the dev/null pipe of the error output at the end prevents 'permission denied' errors displaying)
 
-#### note:
+##### note:
 using locate is much faster but depends on the locate database being current
 ```sh
 Studio-PM-iMac:~ ben$ locate xdebug.so
@@ -24,6 +25,8 @@ use the following to update the locate database (may take 5+ mins)
 ```sh
 sudo /usr/libexec/locate.updatedb
 ```
+
+### configure php.ini
 
 find your php.ini and edit it
 ```sh
@@ -46,12 +49,21 @@ xdebug.remote_port=9000
 xdebug.remote_host=127.0.0.1
 ```
 
-max_nesting_level defaults to 100 and can lead to stack overflows in Symfony
+max_nesting_level defaults to 100 which can lead to stack overflows in Symfony
 
-## troubleshoot
+### Check PHPStorm settings
+Under Preferences -> Project Settings -> PHP -> Debug
+- in the xdebug section, port is set to 9000 and all checkboxes are ticked
 
-remove the .dist to run it, eg. localhost/ini.php
-the web folder is the public web root of a Symfony project
+## VAGRANT/REMOTE DEBUGGING
+
+... to be continued
+
+### troubleshoot
+if xdebug is still not working, then try the following:
+- copy web/ini.php.dist to web/ini.php
+- the web folder is the public web root of a Symfony project
+- browse to localhost/ini.php
 
 ini.php.dist:
 ```php
@@ -59,9 +71,5 @@ ini.php.dist:
 	phpinfo();
 ?>
 ```
-
-if xdebug does not appear in the list of headings, go to 
-http://xdebug.org/wizard.php
-and paste in the HTML of the entire page
-
-
+if xdebug does not appear in the list of modules, go to http://xdebug.org/wizard.php
+and paste in the HTML of the entire page. this page wil give advice on the configuration changes.

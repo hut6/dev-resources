@@ -72,10 +72,11 @@ print help info about app/console
 ### misc notes
 
 Debug CSV Exports 
-	- go to DefaultBundle/Crana/CranaController ->exportQueryResults
-	- comment out response->headers->add
+- go to ```DefaultBundle/Crana/CranaController ->exportQueryResults```
+- comment out ``response->headers->add```
 
 For logging in PHP
+
 	fwrite(STDERR, print_r(count($results), TRUE));
 
 ## OSX Bash

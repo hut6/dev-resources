@@ -23,6 +23,7 @@ apache rules:
     cat ~/public_html/.htaccess
   
 proxy for redirection to DEV or STAGING from live site:
+
     cd public_html/proxy/
     cat get.php
 
@@ -35,6 +36,7 @@ CMS Front End: search OnePassword for crana.org.au:CMS
 ### Installing
 
 download GIT Repo
+
 	cd cranaplus-db/
 	composer install
 	php app/console assets:install
@@ -43,12 +45,15 @@ download GIT Repo
 ### Useful commands
 
 start the project
+
     php app/console server:run
 
 print all routing info
+
 	app/console router:debug
 	
 print help info about app/console
+
 	app/console
 
 ### To rebuild after branch switch or before test
@@ -76,21 +81,24 @@ For logging in PHP
 ## OSX Bash
 
 command line navigation
+
 	ctrl-a				Move to the start of the current line.
 	ctrl-e				Move to the end of the line.
 	option-fwdarrow		Move forward to the end of the next word. Words are composed of letters and digits.
 	option-backarrow	Move backwards a word
 
 find a file (not cached)
+
 	find / -name php.ini 2>/dev/null
 
 locate a file (cached): build database
+
 	sudo /usr/libexec/locate.updatedb
 
 start and stop mysql
+
 	/usr/local/opt/mysql/bin/mysqld_safe
 	/usr/local/opt/mysql/support-files/mysql.server stop
-
 
 ## VIM
 
@@ -116,14 +124,18 @@ start and stop mysql
 ## Git Exotica
 
 print hash of the newest common merged ancestor of the two branches
+
     git merge-base <public branch> <experimental branch>
 
 create text patch file of the changes between the 'branch-private' branch and 'master'
+
     git diff $(git merge-base master branch-private) > anotherPatch.diff
 
 clean up local pointers to remote branches that no longer exist
+
     git remote prune origin
     
 delete remote repository 'newfeature'
+
 	git push origin :newfeature
 

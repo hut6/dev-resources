@@ -73,3 +73,18 @@ and paste in the HTML of the entire page. This page wil give advice on the confi
 ## VAGRANT/REMOTE DEBUGGING
 
 ... to be continued
+
+notes:
+PHPStorm Debug settings
+
+- port 9000
+- inst chrome xdebug plugin
+	- filter localhost.*, 192.*, 127.*
+- debug match local file tree to vagrant server path
+- nginx timeout (vendor folder)
+
+
+PHPUnit invocation for a single bundle
+    phpunit-debug -c app src/Website/DefaultBundle/Tests/Command/
+
+

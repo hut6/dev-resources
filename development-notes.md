@@ -19,6 +19,7 @@
     ssh cranaor2@meson.com.au -p 6395
  
 apache rules:
+
     cat ~/public_html/.htaccess
   
 proxy for redirection to DEV or STAGING from live site:

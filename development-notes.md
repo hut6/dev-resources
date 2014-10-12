@@ -2,7 +2,7 @@
 
 ## Crana Servers
 
-### Staging
+### Staging / Live
 
     ssh securecr@meson.com.au -p 6395
     ssh stagingc@meson.com.au -p 6395
@@ -30,7 +30,39 @@ proxy for redirection to DEV or STAGING from live site:
 CMS Front End: search OnePassword for crana.org.au:CMS
 -  log into admin
 -  for CMS changes remember to clear cache afterwards
+
+### MySql
+
+LocalHost
+	host: 127.0.0.1
+	username: root
+
+Crana Staging 
+	host: 127.0.0.1
+	username: stagingc
+	ssh host: meson.com.au
+	ssh user: stagingc
+	ssh port: 6395
 	
+Crana Production Readonly 
+	host: 127.0.0.1
+	username: securecr_view
+	password: 
+	database: securecr_crm
+	ssh host: meson.com.au
+	ssh user: securecr
+	ssh port: 6395
+	
+Crana Production Full 
+	host: 127.0.0.1
+	username: securecr_crm
+	password: (from live config.yml)
+	database: securecr_crm
+	ssh host: meson.com.au
+	ssh user: securecr
+	ssh port: 6395
+		
+
 ## Symfony Projects
 
 ### Installing

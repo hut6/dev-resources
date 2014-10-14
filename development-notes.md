@@ -34,33 +34,33 @@ CMS Front End: search OnePassword for crana.org.au:CMS
 ### MySql
 
 LocalHost
-	host: 127.0.0.1
-	username: root
+- host: 127.0.0.1
+- username: root
 
 Crana Staging 
-	host: 127.0.0.1
-	username: stagingc
-	ssh host: meson.com.au
-	ssh user: stagingc
-	ssh port: 6395
+- host: 127.0.0.1
+- username: stagingc
+- ssh host: meson.com.au
+- ssh user: stagingc
+- ssh port: 6395
 	
 Crana Production Readonly 
-	host: 127.0.0.1
-	username: securecr_view
-	password: 
-	database: securecr_crm
-	ssh host: meson.com.au
-	ssh user: securecr
-	ssh port: 6395
+- host: 127.0.0.1
+- username: securecr_view
+- password: 
+- database: securecr_crm
+- ssh host: meson.com.au
+- ssh user: securecr
+- ssh port: 6395
 	
 Crana Production Full 
-	host: 127.0.0.1
-	username: securecr_crm
-	password: (from live config.yml)
-	database: securecr_crm
-	ssh host: meson.com.au
-	ssh user: securecr
-	ssh port: 6395
+- host: 127.0.0.1
+- username: securecr_crm
+- password: (from live config.yml)
+- database: securecr_crm
+- ssh host: meson.com.au
+- ssh user: securecr
+- ssh port: 6395
 		
 
 ## Symfony Projects
@@ -117,16 +117,17 @@ command line navigation
 
 	ctrl-a				Move to the start of the current line.
 	ctrl-e				Move to the end of the line.
-	option-fwdarrow		Move forward to the end of the next word. Words are composed of letters and digits.
+	option-fwdarrow		Move forward to the end of the next word. 
 	option-backarrow	Move backwards a word
 
-find a file (not cached)
+find a file (not cached - the pipe suppresses errors about insufficient permissions)
 
 	find / -name php.ini 2>/dev/null
 
-locate a file (cached): build database
+locate a file (cached): build database (the database is then rebuilt in the background at intervals)
 
 	sudo /usr/libexec/locate.updatedb
+	locate php.ini
 
 start and stop mysql
 

@@ -67,8 +67,7 @@ Crana Production Full
 
 ### Installing
 
-download GIT Repo
-
+	<download GIT Repo>
 	cd cranaplus-db/
 	composer install
 	php app/console assets:install

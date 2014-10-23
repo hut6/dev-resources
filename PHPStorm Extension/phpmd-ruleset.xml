@@ -18,7 +18,12 @@
 
     <rule ref="rulesets/codesize.xml/TooManyFields">
         <properties>
-        	<property name="maxfields" description="The field count reporting threshold " value="30"/>
+        	<property name="maxfields" description="The field count reporting threshold " value="25"/>
+		</properties>
+	</rule>
+    <rule ref="rulesets/codesize.xml/TooManyMethods">
+        <properties>
+        	<property name="maxfields" description="The field count reporting threshold " value="50"/>
 		</properties>
 	</rule>
     <rule ref="rulesets/codesize.xml/ExcessivePublicCount">

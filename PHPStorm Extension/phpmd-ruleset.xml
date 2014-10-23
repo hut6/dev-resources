@@ -10,6 +10,7 @@
 
     <rule ref="rulesets/codesize.xml">
         <exclude name="TooManyFields" />
+        <exclude name="TooManyMethods" />
         <exclude name="ExcessivePublicCount" />
         <exclude name="ExcessiveClassComplexity" />
 	</rule>
@@ -23,7 +24,7 @@
 	</rule>
     <rule ref="rulesets/codesize.xml/TooManyMethods">
         <properties>
-        	<property name="maxfields" description="The field count reporting threshold " value="50"/>
+        	<property name="maxmethods" description="The method count reporting threshold " value="50"/>
 		</properties>
 	</rule>
     <rule ref="rulesets/codesize.xml/ExcessivePublicCount">

@@ -1,4 +1,4 @@
-# Coding Standards
+# Hut6 Style Guides 
 
 Coding standards we aspire to follow 
 
@@ -6,17 +6,15 @@ Coding standards we aspire to follow
 
 Soft tab with 4 spaces. Spaces are the only way to guarantee code renders the same in any person's environment. Whether it's HTML, PHP, Javacript, SASS or CSS. 
 
-## PHP 
+## HTML
 
-### Style Guide
+[Github's Markup Style Guide](https://github.com/styleguide/templates)
+
+## PHP 
 
 - [PSR-1 Basic Coding Standard](http://www.php-fig.org/psr/psr-1/)
 - [PSR-2 Coding Style Guide](http://www.php-fig.org/psr/psr-2/)
 - [Symfony Coding Standards](https://github.com/symfony/symfony-docs/blob/master/contributing/code/standards.rst)
-
-### Frameworks
-
-Symfony
 
 ## CSS
 
@@ -42,28 +40,3 @@ Compile Expanded with Line Mapping so dev tools can tell you exactly what file a
 ## JS
 
 [Jquery's Style Guide](http://contribute.jquery.org/style-guide/js/)
-
-## Front End Frameworks
-
-Don't reinvent the wheel; always try to use as many features from your framework as possible. 
-
-### Foundation
-
-Used for front end work (ie website development). 
-
-Use the _settings file as much as possible before overriding any 
-
-Documentation http://foundation.zurb.com/learn/features.html
-
-Use [Slick](http://kenwheeler.github.io/slick/) for carousels and slideshows as Foundation doesn't offer anything suitable for that. 
-
-### Twitter Bootstrap
-
-Used for back end work (ie app development).
-
-http://foundation.zurb.com/learn/features.html
-
-### Ionic + AngularJS
-
-Used for mobile and tablet app development
-

@@ -44,3 +44,9 @@ Group ruleset contents in the following order:
 Try not to nest more than 4 levels deep, if you're deeper than that, you're writing a crappy selector.
 
 Additionally, if a nested block is longer than 60 lines of SASS, it's probably getting too long too. The whole point of nesting is convenience and to assist in mental grouping.
+
+## TWIG
+
+[Coding Standards](http://twig.sensiolabs.org/doc/coding_standards.html) (used by both Craft and Symfony)
+
+Remmeber that `{% if array|length > 0 %}` can also be simplified to `{% if array|length %}`. 

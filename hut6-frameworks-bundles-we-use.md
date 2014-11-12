@@ -6,7 +6,19 @@ Don't reinvent the wheel; always try to use as many features from your framework
 
 ## Back End
 
-Symfony
+### Symfony 
+
+Symfony 
+
+#### Bundles 
+
+FOSUserBundle
+StofDoctrineExtensionsBundle
+KnpPaginatorBundle
+DoctrineFixturesBundle
+DoctrineMigrationsBundle
+AvalancheImagineBundle
+VichUploaderBundle
 
 ## Front End
 

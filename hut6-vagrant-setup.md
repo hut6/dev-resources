@@ -2,6 +2,8 @@
 
 This document will help you setup a vagrant virtual machine, with nginx+PHP+MySQL+xdebug.
 
+---
+
 ## Install Brew
 
 Brew is a package manager for OSX.

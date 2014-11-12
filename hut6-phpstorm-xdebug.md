@@ -1,6 +1,8 @@
 # PHPStorm xdebug configuration on Mac OSX
 
-## LOCALHOST DEBUGGING
+For local host debugging
+
+---
 
 ### Install xdebug
 ```sh

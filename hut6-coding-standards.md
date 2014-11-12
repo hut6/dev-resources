@@ -1,6 +1,8 @@
 # Hut6 Style Guides 
 
-Coding standards we aspire to follow 
+List of style guides we aspire to follow 
+
+---
 
 ## Identation. Tabs, 2 spaces or 4 spaces?
 
@@ -28,12 +30,12 @@ Group related properties in the following order:
 - Properties
 - @includes
 - Nested Media Queties
-- Pseudo-elements and classes
+- Pseudo-elements
 - Nested Rulesets
 
-Try not to nest more than 3 levels deep, if you're deeper than that, you're writing a crappy selector.
+Try not to nest more than 4 levels deep, if you're deeper than that, you're writing a crappy selector.
 
-Additionally, if a nested block is longer than 50 lines of SASS, it's probably getting too long too. The whole point of nesting is convenience and to assist in mental grouping.
+Additionally, if a nested block is longer than 60 lines of SASS, it's probably getting too long too. The whole point of nesting is convenience and to assist in mental grouping.
 
 Compile Expanded with Line Mapping so dev tools can tell you exactly what file and on what line rules are coming from, even if it is an imported partial. In productions, files will be compressed anyway. 
 

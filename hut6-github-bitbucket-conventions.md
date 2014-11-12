@@ -1,5 +1,9 @@
 # Github and Bitbucket Conventions
 
+Just some general info about SCM. 
+
+---
+
 ## Public stuff
 
 We use public repositories in GitHub for any resources that are available to public, general utility resources, procedures or to make contributions to open source projects. 

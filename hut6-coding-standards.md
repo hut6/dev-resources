@@ -10,9 +10,9 @@ Soft tab with 4 spaces. Spaces are the only way to guarantee code renders the sa
 
 ### Style Guide
 
-PSR-1 Basic Coding Standard http://www.php-fig.org/psr/psr-1/
-PSR-2 Coding Style Guide http://www.php-fig.org/psr/psr-2/
-Symfony Coding Standards https://github.com/symfony/symfony-docs/blob/master/contributing/code/standards.rst
+- [PSR-1 Basic Coding Standard](http://www.php-fig.org/psr/psr-1/)
+- [PSR-2 Coding Style Guide](http://www.php-fig.org/psr/psr-2/)
+- [Symfony Coding Standards](https://github.com/symfony/symfony-docs/blob/master/contributing/code/standards.rst)
 
 ### Frameworks
 
@@ -20,7 +20,7 @@ Symfony
 
 ## CSS
 
-Idiomatic CSS https://github.com/necolas/idiomatic-css
+[Idiomatic's Style Guide](https://github.com/necolas/idiomatic-css)
 
 ## SASS 
 
@@ -41,19 +41,21 @@ Compile Expanded with Line Mapping so dev tools can tell you exactly what file a
 
 ## JS
 
-Style Guide: http://contribute.jquery.org/style-guide/js/
+[Jquery's Style Guide](http://contribute.jquery.org/style-guide/js/)
 
 ## Front End Frameworks
 
-Don't reinvent the wheel; always try to use as many features from your framework if possible. 
+Don't reinvent the wheel; always try to use as many features from your framework as possible. 
 
-### Foundation 
+### Foundation
 
 Used for front end work (ie website development). 
 
 Use the _settings file as much as possible before overriding any 
 
 Documentation http://foundation.zurb.com/learn/features.html
+
+Use [Slick](http://kenwheeler.github.io/slick/) for carousels and slideshows as Foundation doesn't offer anything suitable for that. 
 
 ### Twitter Bootstrap
 

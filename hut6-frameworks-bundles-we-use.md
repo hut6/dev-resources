@@ -12,13 +12,13 @@ Symfony
 
 #### Bundles 
 
-FOSUserBundle
-StofDoctrineExtensionsBundle
-KnpPaginatorBundle
-DoctrineFixturesBundle
-DoctrineMigrationsBundle
-AvalancheImagineBundle
-VichUploaderBundle
+- FOSUserBundle
+- StofDoctrineExtensionsBundle
+- KnpPaginatorBundle
+- DoctrineFixturesBundle
+- DoctrineMigrationsBundle
+- AvalancheImagineBundle
+- VichUploaderBundle
 
 ## Front End
 

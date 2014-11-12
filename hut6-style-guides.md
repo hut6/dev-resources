@@ -6,7 +6,7 @@ List of style guides we aspire to follow
 
 ## Identation
 
-Whether it's HTML, PHP, Javacript, SASS or CSS, use an indent of **4 spaces**, and MUST NOT use tabs for indenting. 
+Whether it's HTML, PHP, Javacript, SASS or CSS, use an indent of **4 spaces**, and must not use tabs or 2 spaces for indenting. 
 
 Spaces are the only way to guarantee code renders the same in any person's environment and 4 instead of 2 to make it consistent accross different editors, IDEs and languages.
 

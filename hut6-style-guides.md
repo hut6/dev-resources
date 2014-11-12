@@ -30,6 +30,8 @@ Spaces are the only way to guarantee code renders the same in any person's envir
 
 ## SASS 
 
+Compile Expanded with Line Mapping so dev tools can tell you exactly what file and on what line rules are coming from, even if it is an imported partial. In production, files will be compressed anyway. 
+
 Group ruleset contents in the following order:
 
 - @extends
@@ -42,5 +44,3 @@ Group ruleset contents in the following order:
 Try not to nest more than 4 levels deep, if you're deeper than that, you're writing a crappy selector.
 
 Additionally, if a nested block is longer than 60 lines of SASS, it's probably getting too long too. The whole point of nesting is convenience and to assist in mental grouping.
-
-Compile Expanded with Line Mapping so dev tools can tell you exactly what file and on what line rules are coming from, even if it is an imported partial. In productions, files will be compressed anyway. 

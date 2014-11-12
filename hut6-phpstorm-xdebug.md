@@ -1,7 +1,5 @@
 # PHPStorm xdebug configuration on Mac OSX
 
-Chronicles Ben Mc's adventures with xdebug on localhost and vagrant.
-
 ## LOCALHOST DEBUGGING
 
 ### Install xdebug
@@ -10,7 +8,7 @@ brew install xdebug
 ```
 ### find the xdebug.so file
 ```sh
-Studio-PM-iMac:~ ben$ find / -name xdebug.so 2> /dev/null
+Studio-PM-iMac:~ user$ find / -name xdebug.so 2> /dev/null
 /usr/lib/php/extensions/no-debug-non-zts-20100525/xdebug.so
 /usr/local/Cellar/php54-xdebug/2.2.5/xdebug.so
 ```
@@ -19,7 +17,7 @@ Studio-PM-iMac:~ ben$ find / -name xdebug.so 2> /dev/null
 ##### note:
 using locate is much faster but depends on the locate database being current
 ```sh
-Studio-PM-iMac:~ ben$ locate xdebug.so
+Studio-PM-iMac:~ user$ locate xdebug.so
 ```
 use the following to update the locate database (may take 5+ mins)
 ```sh
@@ -32,7 +30,7 @@ find your php.ini and edit it
 ```sh
 Studio-PM-iMac:~ find / -name php.ini 2> /dev/null
 /private/etc/php.ini
-/Users/ben/PhpstormProjects/cranaplus-website/php.ini
+/Users/user/PhpstormProjects/project/php.ini
 /usr/local/etc/php/5.4/php.ini
 Studio-PM-iMac:~ sudo vi /usr/local/etc/php/5.4/php.ini
 ```

@@ -16,9 +16,9 @@ Don't come up with new passwords yourself. Use a different and strong password f
 
 ## Saving passwords
 
-Only passwords that need to be shared should be saved in the password manager. Please don't put your personal passwords for eg. Gmail, Xero or iCloud in the password manager for everyone to see unless you have your own personal vault in addition to the shared vault. 
+Only passwords that need to be shared should be saved in the password manager. Please don't put your personal passwords for eg. Gmail, Xero or iCloud in the password manager for everyone to see. Either use your browser's password manager or use your own vault.
 
-Then make sure you save passwords to the right vault if there are multiple vaults. 
+If there are multiple vaults, make sure you save passwords to the right vault. 
 
 When saving the password for a site in the password manager, use this format for the description field: 
 

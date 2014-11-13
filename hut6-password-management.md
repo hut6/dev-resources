@@ -24,7 +24,7 @@ When saving the password for a site in the password manager, use this format for
 
 ```domain.com (username)```
 
-If the site doesn't use the default port (eg for WHM, CPanel), specify the port as well: 
+If the site doesn't use the default port (eg for WHM, CPanel), add the port or a label as well after the domain name: 
 
 ```domain.com:2087 (username)```
 
@@ -38,12 +38,6 @@ If a password is out of date in the password manager, or if it's already in ther
 
 Please update the password entry in the password manager when a domain name is changed (eg when a site is launched).
 
-## Autos vs. Manual Save
+## Auto vs. Manual Save
 
 Autosave can be annoying as it's displayed often, and there's a chance you might save passwords that don't belong in the password manager. It's recommended that you disable it and instead save your passwords manually. 
-
-You can also use Manual Save to save complex web forms.
-
-## Other Tips
-
-If in doubt about a site’s security, use OAuth (ie, use Google, Facebook or other to sign in instead of entering your password).

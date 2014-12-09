@@ -1,0 +1,5 @@
+{ 
+    "require": {
+        "sgrodzicki/pingdom": "1.1.*"
+    }
+}

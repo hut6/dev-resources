@@ -28,6 +28,12 @@ Spaces are the only way to guarantee code renders the same in any person's envir
 
 [Idiomatic's Style Guide](https://github.com/necolas/idiomatic-css)
 
+In addition to the this style guide:
+
+No px, %, or other units should be assigned to the line-height value. A number value should be used as a multiplier, where the line eight equals the specified number multiplied by the element’s computed font size. Child elements will also inherit the specified number value, not the computed value for this property. This means the children's font sizes will be used to compute the line-height. 
+Using em is essentially the same as using a number without unit, so it can be ignored. 
+With percentages, child elements will inherit the computed value for the property, not the specified percentage value, which is usually not desired.  
+
 ## SASS 
 
 Compile Expanded with Line Mapping so dev tools can tell you exactly what file and on what line rules are coming from, even if it is an imported partial. In production, files will be compressed anyway. 

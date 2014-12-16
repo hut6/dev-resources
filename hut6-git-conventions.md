@@ -12,7 +12,7 @@ Anything confidential needs to stay out of any public repositories on GitHub.
 
 ## Repository Naming Convention
 
-To make sure we use consistent names, repositories will be named like so: the year the project is started, the business name (in one word), then the project type (in one word), separated by dashes, everything in lower case. For example:
+To make sure we use consistent names, repositories will be named like so: the year the project is started, the business name (in one word, or trading name), then the project type (in one word), separated by dashes, everything in lower case. For example:
 
 ``2014-businessname-website``
 

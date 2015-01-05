@@ -63,10 +63,12 @@ Orders > **Add New Order**
     - Enter the **ABN** in the **Registrant ID** field.
     - For businesses, enter the **ABN** in the **Eligibility ID** field and select **ABN** from the **Eligibility Type** field. Or enter the ACN and select Company for companies (the ACN is the ABN without the two-digit pre-fix), or Incorporated Assoc Number for Associations, etc...
     - Save changes.
-    - Click on **Register** or **Transfer** depending on the case. 
-    - Enter the correct name servers (meson defaults already in there). If it's a transfer, also add the EPP code. Click Yes to confirm. 
+    - Click on **Register** or **Transfer** depending on the case.
+    - Enter the correct name servers (meson defaults already in there). If it's a transfer, also add the EPP code. Click Yes to confirm.
 - For **Google Apps**:
-    - Click on **Create** to set it up automatically
+    - Add the domain name in the **GoogleApps Domain** field, without www.
+    - Add the client's purchase order number in the **GoogleApps PurchaseOrderID** field. 
+    - Click on **Create** to set it up automatically.
 - For **SSL certificates**:
     - We're not sure yet. 
 - For **anything else**, manual setup will be required.
@@ -89,7 +91,7 @@ Clients will not be invoiced for the difference between the old and new plan.
 - In the drop down **Product/Service**, select the new plan.
 - If you want clients to be invoiced the new price after the due date;
 tick "Auto Recalculate on Save" on the right hand side.
-
+- Make sure the **First Payment Amount** is the same as the **Recurring Amount** and change then save if needed. 
 - Click **Save Changes**
 
 ###  Change plans and invoice the difference

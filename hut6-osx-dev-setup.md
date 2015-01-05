@@ -1,4 +1,4 @@
-# Default Setup for Developers
+# Default Setup for Developers (for OSX 10.9 Mavericks)
 
 ## Xcode
 

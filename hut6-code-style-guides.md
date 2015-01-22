@@ -43,6 +43,7 @@ Group ruleset contents in the following order:
 - @extends
 - Properties
 - @includes
+- Pseudo-classes
 - Media Queries
 - Pseudo-elements
 - Rulesets (rinse and repeat)

@@ -1,6 +1,6 @@
-# SCM Conventions
+# GIT Conventions
 
-Just some general info about SCM. 
+Just some general info about GIT. 
 
 ---
 

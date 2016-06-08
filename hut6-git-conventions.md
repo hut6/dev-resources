@@ -2,7 +2,7 @@
 
 ## General tips
 
-- Commit early and often and comment properly
+- Commit early and often and use real commit messages
 - Push on a regular basis
     - lunch break and end of the day
     - for code review, unit test, etc...
@@ -67,9 +67,6 @@ Examples for JetBrains stuff
 
 You can generate your gitignore file here https://www.gitignore.io/
 
-
 #### Other Notes
 
-1. Remember to run git config --global core.excludesfile '~/.gitignore'. I'm not sure that it is set by default on a clean install.
-
-2. If for whatever reason, you don't want to create a .gitignore file to share with others, and you don't want to use a global .gitignore file, you can modify the .git/info/exclude within the root of your Git repository.
+1. Remember to run `git config --global core.excludesfile ~/.gitignore`, because global ignore is not enabled by default.

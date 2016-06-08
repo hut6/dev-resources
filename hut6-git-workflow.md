@@ -2,6 +2,8 @@
 
 **Hut6** workflow for releasing and merging branches into master.
 
+On larger projects, developers will work on bugs and features in separate branches. Once features are implemented on a branch, they are tested, a pull request is made, which a senior developer will check, and then merged into master if everything is ok. Really minor updates or small urgent fixes can be committed directly to the master branch. 
+
 ---
 
 ## Step 1 - Checkout new branch

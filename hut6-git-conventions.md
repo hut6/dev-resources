@@ -1,8 +1,4 @@
-# GIT Conventions
-
-Just some general info about GIT. 
-
----
+# GIT
 
 ## General tips
 

@@ -1,9 +1,5 @@
 # Password Tips 
 
-Some general tips 
-
---- 
-
 ## Using the password manager
 
 To save time, install the [browser extensions](https://agilebits.com/onepassword/extensions) and use the shortcut ``command ⌘ + \`` to open the password manager any time you need it. 
@@ -12,11 +8,7 @@ If your password manager doesn't automatically fill out the form and doesn't lis
 
 ## What to put in the password manager 
 
-Passwords that need to be shared with others and that are not already stored elsewhere, should be saved in the password manager. 
-
-Don't put your personal passwords in the password manager for everyone to see (ie. passwords you don't want colleagues to have access to eg. Gmail, Hotmail, Xero, Facebook, Instagram, Pinterest, etc...). Either use your browser's password manager or use your own vault.
-
-Don't put domain authentication keys, database passwords, ftp or ssh passwords in the password manager either. Those are already stored elsewhere and there's no need to also store them in the password manager. 
+Passwords that are not already stored elsewhere (eg in WHMCS) should be saved in the password manager. Don't put domain authentication keys, database passwords, ftp or ssh passwords in the password manager either. Those are already stored elsewhere and there's no need to also store them in the password manager. 
 
 ## New passwords
 
@@ -46,5 +38,4 @@ Please update the password entry in the password manager when a domain name is c
 
 ## Auto vs. Manual Save
 
-Autosave can be annoying as it's displayed often, and there's a chance you might save passwords that don't belong in the password manager. It's recommended that you disable it and instead save your passwords manually. 
-
+Autosave can be annoying as it's displayed often, and there's a chance you might save passwords that don't belong in the password manager. It's recommended that you disable it and instead save your passwords manually.

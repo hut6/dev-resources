@@ -77,7 +77,7 @@ Merge the **new branch** into the **master** branch:
 
 	git merge --no-ff <new_branch>
 
-* The **--no-ff** flag prevents `git merge` from executing a "fast-forward" merge, which is difficult to revert. 
+* _The **--no-ff** flag prevents `git merge` from executing a "fast-forward" merge, which is difficult to revert._
 
 ## Step 8 - Tag version
 

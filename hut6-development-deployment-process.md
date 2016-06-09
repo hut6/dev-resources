@@ -1,6 +1,6 @@
 # Development & deployment process after a site has been deployed on production
 
-## Important reading
+## Prerequisites
 
 Our Git conventions & best practices:
 

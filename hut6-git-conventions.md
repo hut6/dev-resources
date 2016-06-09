@@ -1,12 +1,15 @@
 # Git
 
-## General tips
+## General Rules
 
 - Commit early and often and use real commit messages
 - Push on a regular basis
+    - after something is completed
     - lunch break and end of the day
-    - for code review, unit test, etc...
-- Pull frequently to keep the repo up to date
+    - for code review, unit tests
+    - when something needs to be deployed
+    - etc...
+- Pull frequently to keep the repo up to date and avoid redundant merge commits
 
 ---
 

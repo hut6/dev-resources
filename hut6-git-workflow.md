@@ -112,7 +112,7 @@ If you release a broke build the first thing you should do is revert back to the
 
 If migrations ran as part of your broken deployment, you will have to migrate down manually. This is quite hard, and you should probably get help.
 
-### _Revert a broken build_
+### _Revert a broken merge_
 If issues come up during the merge, you can find a resource on reverting the changes [here](http://git-scm.com/blog/2010/03/02/undoing-merges.html).
 
 Reverting commits in version control is somewhat confusing, and usually fixing the problem and re-deploying will be best option.

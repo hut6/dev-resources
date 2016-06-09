@@ -2,17 +2,17 @@
 
 **Hut6** workflow for releasing and merging branches into master.
 
-On larger projects, developers will work on bugs and features in separate branches. Once features are implemented on a branch, they are tested, a pull request is made, which a senior developer will check, and then merged into master if everything is ok. Really minor updates or small urgent fixes can be committed directly to the master branch. 
+On larger projects, developers will work on bugs and features in separate branches. Once features are implemented on a branch, they are tested, a pull request is made, which a senior developer will check, and then merged into master if everything is ok. Really minor updates or small urgent fixes can be committed directly to the master branch.
 
 ---
 
 ## Step 1 - Checkout new branch
 
-Create new branch for your changes. Give it a descriptive label so it makes sense to other developers that might work on the project. 
+Create new branch for your changes. Give it a descriptive label so it makes sense to other developers that might work on the project.
 
 	git checkout -b <new_branch>
-    
-## Step 2 - Develop, test, rince & repeat
+
+## Step 2 - Develop, test, rinse & repeat
 
 We now have a new branch where we can make changes and test them without affecting other developers or the **master** branch.
 
@@ -20,7 +20,7 @@ When everything is done and working properly, commit the changes and push the ne
 
 	git add .
 	git commit -m "Some notes about the changes made"
-	git push -u origin <new_branch> 
+	git push -u origin <new_branch>
 
 ## Step 3 - Sync with master
 
@@ -31,7 +31,7 @@ Update the **master** branch and merge it into the **new branch** to make sure t
 Change to the **master** branch:
 
 	git checkout master
-	
+
 Pull the latest changes from master:
 
 	git pull origin master
@@ -50,12 +50,12 @@ Double check that the working branch is your **new branch**:
 Merge **master** into your **new branch**:
 
 	git merge master
-	
+
 ## Step 4 - Push to origin
 
 Now that master has been merged into your **new branch**, make sure everything is still working and push your to the remote repo:
 
-	git push 
+	git push
 
 ## Step 5 - Automated tests
 
@@ -72,11 +72,11 @@ We now need to merge the **new branch** into the **master** branch.
 Change the branch to **master**:
 
 	git checkout master
-	
+
 Merge the **new branch** into the **master** branch:
 
 	git merge --no-ff <new_branch>
-	
+
 * *The **--no-ff** flag prevents `git merge` from executing a "fast-forward".*
 
 ## Step 8 - Tag version
@@ -86,7 +86,7 @@ The **master** branch on your local repository will now contain the changes from
 Use the release script to tag your release and push your changes to the remote repository.
 
     app/tag-release [fix|minor|major] [--force] [-push]
-    
+
 * *Use the **-push** flag to also push the changes to origin*
 * *It is not possible to tag a brach other than master by default. **--force** will allow you to tag branches other than master, but should not be used unless exceptional circumstances.*
 
@@ -102,7 +102,7 @@ You can deploy by running the the following command on the server.
 
 Some changes will need database updates or migrations, vendors updates, caches clearing and new assets dumped.
 
-## Issues and Resolution 
+## Issues and Resolution
 
 ### *Releasing a broken build*
 * If you release a broke build the first thing you should do is revert back to the previous working build. You can do this by using the following.

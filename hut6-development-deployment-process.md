@@ -31,7 +31,7 @@ Run migrations if applicable
 
 ### Step 3
 
-Develop, test, rinse and repeat
+Develop, test, rinse and repeat locally. 
 
 ### Step 4 
 

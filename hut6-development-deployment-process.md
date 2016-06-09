@@ -2,9 +2,9 @@
 
 ## Important reading
 
-Our GIT conventions & best practices:
+Our Git conventions & best practices:
 
-[hut6-git-workflow.md](https://github.com/hut6/dev-resources/blob/master/hut6-git-conventions.md)
+[hut6-git-conventions.md](https://github.com/hut6/dev-resources/blob/master/hut6-git-conventions.md)
 
 ---
 
@@ -12,7 +12,7 @@ Our GIT conventions & best practices:
 
 If you develop web applications or websites, every developer has to have their own local setup, where development has to be done locally at all times. Every change can be verified locally first, proper quality assurance testing can be done, then, once it’s tested properly, it can be pushed to the production server. 
 
-Automatic upload via FTP (rsync, ssh, etc... ie not GIT) is not allowed. While this gives developers a small advantage of not installing the site or the application on their computers to perform testing locally, it will waste a lot of time down the track, and cause a lot of issues. 
+Automatic upload via FTP (rsync, ssh, etc... ie not Git) is not allowed. While this gives developers a small advantage of not installing the site or the application on their computers to perform testing locally, it will waste a lot of time down the track, and cause a lot of issues. 
 
 ### Step 1 
 

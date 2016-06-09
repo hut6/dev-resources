@@ -35,7 +35,7 @@ Develop, test, rinse and repeat locally.
 
 ### Step 4 
 
-Deploy on production. Depending on the project, especially with Craft, DB changes on production may need to be done manually. See below. 
+Deploy on production using git (or a script that uses git, etc...). Depending on the project, especially with Craft, DB changes on production may need to be done manually. See below. 
 
 ### Notes about Craft
 

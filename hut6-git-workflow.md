@@ -8,7 +8,7 @@ On larger projects, developers will work on bugs and features in separate branch
 
 ## Step 1 - Checkout new branch
 
-Create new branch for your changes. Give it a descriptive label so it makes sense to other developers that might work on the project.
+Create new branch for your changes. Give it a descriptive no-flabel so it makes sense to other developers that might work on the project.
 
 	git checkout -b <new_branch>
 
@@ -77,7 +77,7 @@ Merge the **new branch** into the **master** branch:
 
 	git merge --no-ff <new_branch>
 
-* *The **--no-ff** flag prevents `git merge` from executing a "fast-forward".*
+* The **--no-ff** flag prevents `git merge` from executing a "fast-forward".
 
 ## Step 8 - Tag version
 

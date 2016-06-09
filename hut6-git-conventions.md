@@ -1,4 +1,4 @@
-# GIT
+# Git
 
 ## General tips
 
@@ -70,3 +70,4 @@ You can generate your gitignore file here https://www.gitignore.io/
 #### Other Notes
 
 1. Remember to run `git config --global core.excludesfile ~/.gitignore`, because global ignore is not enabled by default.
+2. It's possible to include previous excluded files using the prefix !. There are exceptions; more info at [https://git-scm.com/docs/gitignore]()

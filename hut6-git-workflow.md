@@ -77,7 +77,7 @@ Merge the **new branch** into the **master** branch:
 
 	git merge --no-ff <new_branch>
 
-* The **--no-ff** flag prevents `git merge` from executing a "fast-forward".
+* The **--no-ff** flag prevents `git merge` from executing a "fast-forward" merge, which is difficult to revert. 
 
 ## Step 8 - Tag version
 
@@ -87,8 +87,8 @@ Use the release script to tag your release and push your changes to the remote r
 
     app/tag-release [fix|minor|major] [--force] [-push]
 
-* *Use the **-push** flag to also push the changes to origin*
-* *It is not possible to tag a brach other than master by default. **--force** will allow you to tag branches other than master, but should not be used unless exceptional circumstances.*
+* _Use the **-push** flag to also push the changes to origin_
+* _It is not possible to tag a branch other than master by default. **--force** will allow you to tag branches other than master, but should not be used unless exceptional circumstances._
 
 ## Step 9 - Deploy
 
@@ -98,16 +98,21 @@ You can deploy by running the the following command on the server.
 
 	app/deploy [prod|stage] <version_number>
 
-### *Post Deployment*
+### _Post Deployment_
 
-Some changes will need database updates or migrations, vendors updates, caches clearing and new assets dumped.
+Some changes will need database updates or migrations, vendors updates, caches clearing and new assets dumped. These should be included in the project's `app/deploy` script.
 
 ## Issues and Resolution
 
-### *Releasing a broken build*
-* If you release a broke build the first thing you should do is revert back to the previous working build. You can do this by using the following.
+### _Releasing a broken build_
+
+If you release a broke build the first thing you should do is revert back to the previous working build. You can do this by using the following.
 
 `app/deploy [prod|stage] <previous_working_version>`
 
-### *Revert a broken build*
-* If issues come up during the merge, you can find a resource on reverting the changes [here](http://git-scm.com/blog/2010/03/02/undoing-merges.html).
+If migrations ran as part of your broken deployment, you will have to migrate down manually. This is quite hard, and you should probably get help.
+
+### _Revert a broken build_
+If issues come up during the merge, you can find a resource on reverting the changes [here](http://git-scm.com/blog/2010/03/02/undoing-merges.html).
+
+Reverting commits in version control is somewhat confusing, and usually fixing the problem and re-deploying will be best option.

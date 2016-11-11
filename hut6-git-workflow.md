@@ -7,6 +7,7 @@ On larger projects, developers will work on bugs and features in separate branch
 ## Beta Process
 
 All project branches are prefixed with "P-". All feature branches are prefixed "F-". Code review should typically be a diff of a feature branch F-name against project branch P-name.
+
 ---
 
 ## Step 1 - Checkout new branch

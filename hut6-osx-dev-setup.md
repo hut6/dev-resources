@@ -52,6 +52,7 @@ Java is required by some apps still; PHP Storm, the Adobe suite, etc... ``java -
 Most of the apps you'll want can be installed using Caskroom, if you like it that way:
 
 ```
+brew install gpg
 brew tap caskroom/cask
 brew cask install phpstorm google-chrome slack onepassword sequel-pro firefox  github codekit sublime-text keka harvest alfred imageoptim imagealpha the-unarchiver docker virtualbox vagrant ansible filezilla teamviewer carbon-copy-cloner
 ```

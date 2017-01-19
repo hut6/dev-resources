@@ -53,7 +53,7 @@ Most of the apps you'll want can be installed using Caskroom, if you like it tha
 
 ```
 brew tap caskroom/cask
-brew cask install phpstorm google-chrome slack onepassword sequel-pro firefox  github codekit sublime-text keka harvest alfred imageoptim imagealpha the-unarchiver docker virtualbox vagrant filezilla teamviewer carbon-copy-cloner
+brew cask install phpstorm google-chrome slack onepassword sequel-pro firefox  github codekit sublime-text keka harvest alfred imageoptim imagealpha the-unarchiver docker virtualbox vagrant ansible filezilla teamviewer carbon-copy-cloner
 ```
 
 ## PHP settings

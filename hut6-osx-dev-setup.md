@@ -5,10 +5,7 @@
 You'll find more information about the modified items here [github.com/mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles/blob/master/README.md). Open apps will be closed; save your work before executing the last command. 
 
 ```
-cd ~
 git clone https://github.com/mathiasbynens/dotfiles.git && cd dotfiles && source bootstrap.sh
-cd ~
-./.osx
 ```
 
 Hot corners will be turned on. If you don't like to use hot corners; settings can be found in the **Screen Saver** settings window. 

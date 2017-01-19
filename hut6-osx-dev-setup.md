@@ -1,15 +1,6 @@
 # Default Setup for Developers (for OSX 10.9 Mavericks)
 
-## Xcode
-
-Download and install **Xcode** [https://itunes.apple.com/us/app/xcode/id497799835](https://itunes.apple.com/us/app/xcode/id497799835)
-
-Then install the **Xcode Command Line Tools** ``xcode-select --install``.
-
-Mac OS X Mavericks will also alert you when you enter a command in the terminal that requires Xcode Command Line Tools. 
-
-
-## Setup sensible defaults for OS X (Mathias’s dotfiles)
+## Console Setup (Mathias’s dotfiles)
 
 You'll find more information about the modified items here [github.com/mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles/blob/master/README.md). Open apps will be closed; save your work before executing the last command. 
 
@@ -95,3 +86,13 @@ This installer script will simply check some php.ini settings, warn you if they 
 defaults write com.apple.finder AppleShowAllFiles YES
 killall Finder
 ```
+
+## Xcode
+
+You will probably need Xcode at some point, but it's not necessary. 
+
+Download and install **Xcode** [https://itunes.apple.com/us/app/xcode/id497799835](https://itunes.apple.com/us/app/xcode/id497799835)
+
+Then install the **Xcode Command Line Tools** ``xcode-select --install``.
+
+Mac OS X Mavericks will also alert you when you enter a command in the terminal that requires Xcode Command Line Tools. 

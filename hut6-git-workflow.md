@@ -89,18 +89,14 @@ The **master** branch on your local repository will now contain the changes from
 
 Use the release script to tag your release and push your changes to the remote repository.
 
-    app/tag-release [fix|minor|major] [--force] [-push]
+    app/tag-release [fix|minor|major] [--force] [--push]
 
-* _Use the **-push** flag to also push the changes to origin_
+* _Use the **--push** flag to also push the changes to origin_
 * _It is not possible to tag a branch other than master by default. **--force** will allow you to tag branches other than master, but should not be used unless exceptional circumstances._
 
 ## Step 9 - Deploy
 
-Now that the remote **master** branch is updated with your lastest changes, we can deploy to the server.
-
-You can deploy by running the the following command on the server.
-
-	app/deploy [prod|stage] <version_number>
+Deployments vary from project to project.
 
 ### _Post Deployment_
 
